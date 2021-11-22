@@ -1,8 +1,11 @@
-- 👋 Hi, I’m @jiayong1008 (Full Name - Lim Jia Yong) from KL, Malaysia
+- 👋 Hi, I’m Lim Jia Yong from Puchong Selangor, Malaysia.
+- 🎓 Undergraduate student in Asia Pacific University (APU) Malaysia.
+- 🎓 Taken and completed 3 online courses from Harvard University.
 - 👀 I’m interested in web development (both frontend and backend)
-- 🌱 I’m currently learning Python's Flask and Django web framework
+- 👀 I'm also equally interested in data science (data mining, machine learning, etc.)
+- 🌱 I’m fairly familiar with Python's Flask and Django web framework
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to find me ...
+- 📫 You can reach me at jiayong1008@gmail.com
 
 <!---
 jiayong1008/jiayong1008 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
