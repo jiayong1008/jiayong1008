@@ -5,6 +5,7 @@
 - 👀 I'm also equally interested in data science (data mining, machine learning, etc.)
 - 🌱 I’m fairly familiar with Python's Flask and Django web framework
 - 💞️ I’m currently seeking for an internship opportunity in Malaysia
+- 💞️ I’d like the opportunity to collaborate on exciting opportunities, don't hesitate to hit me up
 - 📫 You can reach me at jiayong1008@gmail.com
 
 <!---
