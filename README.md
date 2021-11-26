@@ -26,17 +26,17 @@ This very repository is where I store all my personal projects that are neither 
 :point_right: **[View More]()** (Not published yet)  
 
 2. **Stock**  
-**Description:** A time planner application designed to help users efficiently and effectively schedule days or weeks ahead. Users will be able to register, login, customize weekly schedule (add, edit, delete), add special events, modify to-do list, and of course, logout.  
+**Description:** Besides coding, I have quite some interest in stocks and real estates. Hence, I developed this program to calculate stock fees for me, taking into account the current stamp duty, SST, clearance, and broker fee. Why do I need to calculate when the broker website will calculate it for me if I do purchase? Because even if I do buy, they take at least a day to include that in your account, unfortunately, I don't have patience when it comes to managing finance 😆.  
 **Language:** Python  
 :point_right: **[View More]()** (Not published yet)  
 
 3. **Property**  
-**Description:** A time planner application designed to help users efficiently and effectively schedule days or weeks ahead. Users will be able to register, login, customize weekly schedule (add, edit, delete), add special events, modify to-do list, and of course, logout.  
+**Description:** With my obsession in properties / real estate, I often find myself calculating the profitability of Malaysian real estates. Do I even have the money to purchae? Certainly not, considering I can't even afford a toy house (just joking, of course), but I do have deep interest in it. With that said, I developed this program to do all the maths for me.  
 **Language:** Python  
 :point_right: **[View More]()** (Not published yet)  
 
 4. **Microsoft Teams Bot**  
-**Description:** A time planner application designed to help users efficiently and effectively schedule days or weeks ahead. Users will be able to register, login, customize weekly schedule (add, edit, delete), add special events, modify to-do list, and of course, logout.  
+**Description:** Oh yes, sometimes I do like to annoy my classmates abit, so I developed this Microsoft Teams Bot to spam my friends if I need to. Note that I only do this for entartainment purposes, I have no intention to ruin any class or overdoing it, I do make sure that the time is appropriate to do so before doing it. A bit of humour is good for our mental health, no? 👀  
 **Language:** Python  
 :point_right: **[View More]()** (Not published yet)  
 
