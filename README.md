@@ -23,22 +23,22 @@ This very repository is where I store all my personal projects that are neither 
 1. **Sudoku**  
 **Description:** Dump a sudoku question to this program, it will solve it for you, no matter how hard it is, provided the sudoku is indeed solvable. Try dumping any 'extreme' sudoku you find online to this program, if my program failed to solve, I owe you an ice cream 🍦.  
 **Language:** Python  
-:point_right: **[View More]()**  
+:point_right: **[View More]()** (Not published yet)  
 
 2. **Stock**  
 **Description:** A time planner application designed to help users efficiently and effectively schedule days or weeks ahead. Users will be able to register, login, customize weekly schedule (add, edit, delete), add special events, modify to-do list, and of course, logout.  
 **Language:** Python  
-:point_right: **[View More]()**  
+:point_right: **[View More]()** (Not published yet)  
 
 3. **Property**  
 **Description:** A time planner application designed to help users efficiently and effectively schedule days or weeks ahead. Users will be able to register, login, customize weekly schedule (add, edit, delete), add special events, modify to-do list, and of course, logout.  
 **Language:** Python  
-:point_right: **[View More]()**  
+:point_right: **[View More]()** (Not published yet)  
 
 4. **Microsoft Teams Bot**  
 **Description:** A time planner application designed to help users efficiently and effectively schedule days or weeks ahead. Users will be able to register, login, customize weekly schedule (add, edit, delete), add special events, modify to-do list, and of course, logout.  
 **Language:** Python  
-:point_right: **[View More]()**  
+:point_right: **[View More]()** (Not published yet)  
 
 I am open to any project feedback or recommendations, if you have one, do let me know. 😄
 
