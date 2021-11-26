@@ -12,7 +12,7 @@
 - 👉 [Personal Website](https://limjiayong.wordpress.com/)
 
 ## HarvardX
-HarvardX is an online learning initiative by *Harvard University* through [edX](https://www.edx.org/school/harvardx) online platform. These courses are also taught physically in Harvard itself. View my [Harvard repository](https://github.com/jiayong1008/harvardx) where I include some of my projects.  
+HarvardX is an online learning initiative by *Harvard University* through [edX](https://www.edx.org/school/harvardx) online platform. These courses are also taught physically in Harvard itself. I have learnt a fair lot from these courses, to name a few, fundamentals of programming with C and Python, web programming with Python's Flask, Django, SQLite, HTML, CSS, JavaScript, and even the fundamentals of Artificial Intelligence. View my [Harvard repository](https://github.com/jiayong1008/harvardx) where I include some of my projects.  
 
 ## APU Projects
 The [APU Project repository](https://github.com/jiayong1008/apu) contains projects or assignments which I have completed during my Diploma study in Asia Pacific University (APU), Malaysia. Do check it out. 😄
@@ -21,7 +21,7 @@ The [APU Project repository](https://github.com/jiayong1008/apu) contains projec
 This very repository is where I store all my personal projects that are neither Harvard nor APU's assignment. Each project are unique from each other and are developed when I have the need to automate something or find myself interested in a certain project. All my projects are listed as below, though, I plan to add more to this list as the time goes by:
 
 1. **Sudoku**  
-**Description:** Dump a sudoku question to this program, it will solve it for you, no matter how hard it is, provided the sudoku is indeed solvable. Try dumping any 'extreme' sudoku you find online to this program, if my program failed to solve, I owe you an ice cream 🍦.  
+**Description:** Dump a sudoku question into this program, it will solve it for you, no matter how hard it is, provided the sudoku is indeed solvable. Try dumping any 'extreme' sudoku you find online to this program, if my program failed to solve, I owe you an ice cream 🍦.  
 **Language:** Python  
 :point_right: **[View More]()** (Not published yet)  
 
@@ -31,7 +31,7 @@ This very repository is where I store all my personal projects that are neither 
 :point_right: **[View More]()** (Not published yet)  
 
 3. **Property**  
-**Description:** With my obsession in properties / real estate, I often find myself calculating the profitability of Malaysian real estates. Do I even have the money to purchae? Certainly not, considering I can't even afford a toy house (just joking, of course), but I do have deep interest in it. With that said, I developed this program to do all the maths for me.  
+**Description:** With my obsession in properties / real estate, I often find myself calculating the profitability of Malaysian real estates. Do I even have the money to purchase it? Certainly not, considering I can't even afford a toy house (just joking, of course), but I do have deep interest in it. With that said, I developed this program to do all the maths for me.  
 **Language:** Python  
 :point_right: **[View More]()** (Not published yet)  
 
