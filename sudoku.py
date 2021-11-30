@@ -2,9 +2,11 @@ import sys
 from termcolor import cprint
 
 
-# Cell Variable (Individual Box in Sudoku)
+# Cell Variable (Individual Cell in Sudoku)
 class Variable():
-    """Create a new variable with x, y position, and fixed status (True/False)"""
+    """Create a new sudoku variable with cell coordinates, i and j, 
+        it's value (if provided in question), and grid value (0 to 8)"""
+
     def __init__(self, i, j, value, grid):
         self.i = i
         self.j = j
@@ -53,10 +55,10 @@ class Sudoku():
                 row.append(True if value is None else False)
             self.structures.append(row)
 
-
     def get_grid(self, i, j):
         """
-            Returns grid index given cell position - grids are indexed from 0 to 8 top down, left right
+            Returns grid index given cell position,
+            grids are indexed from 0 to 8 top down, left right:
             0 1 2
             3 4 5
             6 7 8
@@ -66,15 +68,15 @@ class Sudoku():
         col = int(j / 3)
         return grids[row][col]
 
-    # def neighbours(self, var):
-    #     """Given a variable, return set of neughbour variables (same row / column / grid)."""
-    #     result = set()
-    #     for v in self.variables:
-    #         if v == var:
-    #             continue
-    #         if v.i == var.i or v.j == var.j or v.grid == var.grid:
-    #             result.add(v)
-    #     return result
+    def neighbours(self, assignment, var):
+        """Given a variable, return set of unassigned neighbouring variables."""
+        results = set()
+        for v in self.variables:
+            if v == var or v.value is not None or v in assignment:
+                continue
+            elif v.i == var.i or v.j == var.j or v.grid == var.grid:
+                results.add(v)
+        return results
 
 
 class SudokuCreator():
@@ -83,8 +85,10 @@ class SudokuCreator():
     def __init__(self, sudoku):
         self.sudoku = sudoku
         self.domains = dict()
+        # grp domain referring to a specific row, col, or grid
         self.grpdomains = dict()
         possible_values = set(range(1, 10))
+        # answer to assist printing upon completion
         self.answer = [
             [None for _ in range(self.SIZE)]
             for _ in range(self.SIZE)
@@ -95,6 +99,7 @@ class SudokuCreator():
             for type in ['row', 'col', 'grid']:
                 self.grpdomains[f'{type}{i}'] = possible_values.copy()
 
+        # Possible domains for empty cell
         for var in self.sudoku.variables:
             value = var.value
 
@@ -112,155 +117,13 @@ class SudokuCreator():
                 except KeyError:
                     pass
             self.answer[i][j] = value
-
-
-    def solve(self):
-        assignment = dict()
-        count= 0
-        while True:
-            count += 1
-            if count == 500:
-                print("Looped every grid for 500 times and still no solution.")
-                return assignment
-
-            initial = len(assignment)
-            for grid in self.select_unassigned_grid():
-                revised = True
-                while revised:
-                    revised_node, assignment = self.enforce_node_consistency(assignment, grid)
-                    # If assginment is revised, check if current grid is completed
-                    if revised_node and self.grid_complete(grid, assignment):
-                        break
-
-                    # Compare values with other variables within the grid to deduce new knowledge
-                    revised, assignment = self.enforce_grid_consistency(assignment, grid)
-                    if revised and self.grid_complete(grid, assignment):
-                        break
-
-                """
-                Find Naked pairs
-                Two cells in a row, a column, or a block having only the same pair of candidates are called a Naked Pair.
-                All other appearances of the two candidates in the same row, column, or block can be eliminated.
-                """
-            
-            """
-            Find Hidden Single
-            A cell with multiple candidates is called a Hidden Single if one of the candidates is the only 
-            candidate in a row, a column, or a block. The single candidate is the solution to the cell. 
-            All other appearances of the same candidate, if any, are eliminated if they can be seen by the Single.
-            """
-
-            if self.assignment_complete(assignment):
-                return assignment
-            elif len(assignment) == initial:
-                print(f"No more inference can be made. This is the best we can do. Looped {count} times.")
-                return assignment
-
-
-    def enforce_node_consistency(self, assignment, grid):
-        """Update domain of cells in grid according to their respective row, column, grid"""
-        
-        # Initially, revised will be set to True for the sake of entering the while loop for the first time
-        initial = len(assignment)
-        revised = True        
-        count = 0
-        gridDomain = self.grpdomains[f'grid{grid}']
-        
-        while revised:
-            count += 1
-            if count == 1000:
-                raise Exception(f"Unlimited loop in grid {grid}, try debugging")
-            revised = False
-
-            # Try to make new inference
-            for var in self.get_variables(grid, assignment):
-                i, j = var.i, var.j
-                rowDomain = self.grpdomains[f'row{i}']
-                colDomain = self.grpdomains[f'col{j}']
-                conclusion = set.intersection(gridDomain, rowDomain, colDomain)
-
-                # Found answer for this variable
-                if len(conclusion) == 1:
-                    assignment[var] = conclusion.pop()
-                    rowDomain.remove(assignment[var])
-                    colDomain.remove(assignment[var])
-                    gridDomain.remove(assignment[var])
-                    if len(rowDomain) == 0 or len(colDomain) == 0 or len(gridDomain) == 0:
-                        break
-                    revised = True
-
-                # New inference made
-                elif conclusion < self.domains[var]:
-                    self.domains[var] = conclusion
-                    revised = True
-
-        revised = True if len(assignment) != initial else False
-        return revised, assignment
-
-
-    def enforce_grid_consistency(self, assignment, grid):
-        tmp_assignment = dict()
-        gridDomain = self.grpdomains[f'grid{grid}']
-        for domain in gridDomain:
-            for var in self.get_variables(grid, assignment):
-                if domain not in self.domains[var]:
-                    continue
-                if domain in tmp_assignment:
-                    del tmp_assignment[domain]
-                    break
-                else:
-                    tmp_assignment[domain] = var
-        
-        revised = False
-        for domain, var in tmp_assignment.items():
-            assignment[var] = domain
-            self.grpdomains[f'row{var.i}'].remove(domain)
-            self.grpdomains[f'col{var.j}'].remove(domain)
-            self.grpdomains[f'grid{var.grid}'].remove(domain)
-            revised = True
-        return revised, assignment
-
-
-    def select_unassigned_grid(self):
-        """Return not fully assigned grid(s) in ascending order"""
-        result = dict()
-        for i in range(self.SIZE):
-            length = len(self.grpdomains[f'grid{i}'])
-            if length > 0:
-                result[i] = length
-        return [val for val, _ in sorted(result.items(), key=lambda item: item[1])]
-
-
-    def get_variables(self, grid, assignment):
-        """Return unassigned variables from a grid"""
-        result = set()
-        row = int(grid / 3) * 3
-        col = (grid % 3) * 3
-        for i in range(3):
-            for j in range(3):
-                if self.sudoku.structures[row+i][col+j]:
-                    result.add((row+i, col+j))
-
-        variables = []
-        for var in self.domains:
-            if (var.i, var.j) in result and var not in assignment:
-                variables.append(var)
-        return variables
-
-
-    def assignment_complete(self, assignment):
-        """Checks if assignment is completed"""
-        for var in self.sudoku.variables:
-            if var.value is None and var not in assignment:
-                return False
-        return True
-
-
-    def grid_complete(self, grid, assignment):
-        """Checks if grid is completed"""
-        variables = self.get_variables(grid, assignment)
-        return len(variables) == 0
-
+    
+    def populate_answer(self, assignment):
+        """Populate answer in 2D arrays - Helper function for self.print()"""
+        for var, num in assignment.items():
+            i, j = var.i, var.j
+            self.answer[i][j] = num
+        return
 
     def print(self, assignment):
         """Print sudoku solution"""
@@ -280,16 +143,353 @@ class SudokuCreator():
             print()
         print()
 
-    
-    def populate_answer(self, assignment):
-        """Populate answer in 2D arrays - Helper function for self.print()"""
-        for var, num in assignment.items():
-            i, j = var.i, var.j
-            # if len(num) != 1:
-            #     raise Exception(f"Cell[{i}][{j}] is assigned to more than 1 value.")
-            self.answer[i][j] = num
-        return
 
+    def solve(self):
+        """Solve the sudoku problem"""
+        # assignment maps variable (sudoku cell) to a value, basically the temporary 'answer'
+        assignment = dict()
+        
+        count= 0
+        while True:
+            count += 1
+            if count == 200:
+                print("Looped every grid for 200 times and still no solution.")
+                return assignment
+
+            # Solve sudoku beginning with grids, then proceed to row and column
+            updated_grid = self.solve_grid(assignment)
+            updated_row_col = self.solve_row_col(assignment)
+            updated = updated_grid or updated_row_col
+
+            if self.assignment_complete(assignment):
+                print(f"\nLooped {count} times.")
+                return assignment
+            # If no more inference can be made from grid, row, and col, execute backtrack algorithm to solve it
+            elif not updated:
+                print(f"\nNo more inference can be made after {count} loops, attempting backtrack...")
+                new_assignment = self.backtrack(assignment)
+                if new_assignment:
+                    assignment = new_assignment
+                else:
+                    print("Backtrack failed.")
+                return assignment
+
+    def solve_grid(self, assignment):
+        updated = False
+        for grid in self.select_unassigned_grid():
+            revised = True
+            while revised:
+                # Maintain node and grid consitency
+                revised, assignment = self.enforce_grid_consistency(assignment, grid)
+                if not revised:
+                    break
+
+                updated = True
+                revised, assignment = self.find_naked_pairs(assignment, 'grid', grid)
+
+                if self.grid_complete(grid, assignment):
+                    break
+        return updated
+
+    def solve_row_col(self, assignment):
+        """Compare values with other variables within the row and col to deduce new knowledge"""
+        updated = False
+        while True:
+            modified = False
+            for i in range(self.SIZE):
+                revised_row, assignment = self.find_hidden_single(assignment, 'row', i)
+                revised_col, assignment = self.find_hidden_single(assignment, 'col', i)
+                if revised_row or revised_col:
+                    modified = True
+
+            if not modified:
+                break
+            updated = True
+
+            for i in range(self.SIZE):
+                revised_row, assignment = self.find_naked_pairs(assignment, 'row', i)
+                revised_col, assignment = self.find_naked_pairs(assignment, 'col', i)
+                if revised_row or revised_col:
+                    modified = True
+
+            if not modified:
+                break
+        return updated
+
+    def enforce_grid_consistency(self, assignment, grid):
+        revised = True
+        updated = False
+        while revised:
+            revised_node, assignment = self.enforce_group_consistency(assignment, 'grid', grid)
+            # If assginment is revised, check if current grid is completed
+            if revised_node:
+                updated = True
+                if self.grid_complete(grid, assignment):
+                    break
+
+            # Compare values with other variables within the grid to deduce new knowledge
+            revised, assignment = self.find_hidden_single(assignment, 'grid', grid)
+            if revised:
+                updated = True
+                if self.grid_complete(grid, assignment):
+                    break
+
+            revised = revised_node or revised
+
+        return updated, assignment
+
+
+    def enforce_group_consistency(self, assignment, type, index):
+        """Update domain of cells in grid according to their respective row, column, grid"""
+        
+        # Initially, revised will be set to True for the sake of entering the while loop for the first time
+        revised = True
+        updated = False        
+        count = 0
+        grpDomain = dict()
+        grpDomain[0] = self.grpdomains[f'{type}{index}']
+        
+        while revised:
+            count += 1
+            if count == 200:
+                raise Exception(f"Unlimited loop in {type} {index}, try debugging")
+            revised = False
+
+            # Try to make new inference
+            for var in self.get_variables(assignment, type, index):
+                count = 0
+                for innerType in ['row', 'col', 'grid']:
+                    if innerType == type:
+                        continue
+                    elif innerType == 'row':
+                        value = var.i
+                    elif innerType == 'col':
+                        value = var.j
+                    else:
+                        value = var.grid
+                    count += 1
+                    grpDomain[count] = self.grpdomains[f'{innerType}{value}']
+                conclusion = set.intersection(grpDomain[0], grpDomain[1], grpDomain[2], self.domains[var])
+
+                # Found answer for this variable
+                if len(conclusion) == 1:
+                    assignment[var] = conclusion.pop()
+                    self.domains[var] = assignment[var]
+                    for i in range(3):
+                        grpDomain[i].remove(assignment[var])
+                    revised = True
+                    updated = True
+                    if len(grpDomain[0]) == 0:
+                        break
+
+                # Will only come to this case during backtrack function
+                # elif len(conclusion) == 0:
+                #     return None
+
+                # New inference made
+                elif conclusion < self.domains[var]:
+                    self.domains[var] = conclusion
+                    revised = True
+                    updated = True
+
+        return updated, assignment
+
+
+    def find_hidden_single(self, assignment, type, index):
+        """The only one of its kind in an entire row, column, or grid."""
+        tmp_assignment = dict()
+        grpDomain = self.grpdomains[f'{type}{index}']
+        for domain in grpDomain:
+            for var in self.get_variables(assignment, type, index):
+                if domain not in self.domains[var]:
+                    continue
+                if domain in tmp_assignment:
+                    del tmp_assignment[domain]
+                    break
+                else:
+                    tmp_assignment[domain] = var
+        
+        revised = False
+        for domain, var in tmp_assignment.items():
+            assignment[var] = domain
+            self.domains[var] = {domain}
+            self.update_domain(var, domain)
+            revised = True
+        return revised, assignment
+
+
+    def find_naked_pairs(self, assignment, type, index):
+        """
+        Two cells in a row, a column, or a block having only the same pair of candidates 
+        are called a Naked Pair. All other appearances of the two candidates in the same 
+        row, column, or block can be eliminated.
+        """
+        count = 0
+        revised = True
+        while revised:
+            pair_domain = dict()
+            real_pair_domain = dict()
+            grpVariables = self.get_variables(assignment, type, index)
+            for var in grpVariables:
+                domain = self.domains[var]
+                if len(domain) != 2:
+                    continue
+
+                for pair_var, pair in pair_domain.items():
+                    if pair == domain:
+                        key = (pair_var, var)
+                        real_pair_domain[key] = domain
+                        break
+                if domain not in pair_domain.values():
+                    pair_domain[var] = domain
+            
+            revised = False
+            for vars, domain in real_pair_domain.items():
+                # If it is row, update entire row, same goes to col
+                for grpVar in grpVariables:
+                    # Skip the same variable
+                    if grpVar in vars:
+                        continue
+                    for val in domain:
+                        try:
+                            self.domains[grpVar].remove(val)
+                            revised = True
+                            count += 1
+                        except:
+                            pass
+
+        revised = count > 0
+        return revised, assignment
+    
+
+    def update_domain(self, var, value, add=False):
+        """Update domain by adding or removing value"""
+        if not add:
+            try:
+                self.grpdomains[f'row{var.i}'].remove(value)
+            except:
+                return False
+
+            try:
+                self.grpdomains[f'col{var.j}'].remove(value)
+            except:
+                self.grpdomains[f'row{var.i}'].add(value)
+                return False
+
+            try:
+                self.grpdomains[f'grid{var.grid}'].remove(value)
+            except:
+                self.grpdomains[f'row{var.i}'].add(value)
+                self.grpdomains[f'col{var.j}'].add(value)
+                return False
+
+        else:
+            self.grpdomains[f'row{var.i}'].add(value)
+            self.grpdomains[f'col{var.j}'].add(value)
+            self.grpdomains[f'grid{var.grid}'].add(value)
+        return True
+
+
+    def select_unassigned_grid(self):
+        """Return not fully assigned grid(s) in ascending order"""
+        result = dict()
+        for i in range(self.SIZE):
+            length = len(self.grpdomains[f'grid{i}'])
+            if length > 0:
+                result[i] = length
+        return [val for val, _ in sorted(result.items(), key=lambda item: item[1])]
+
+
+    def get_variables(self, assignment, type, value):
+        """Return unassigned variables from a row, col, or grid"""
+        result = set()
+
+        if type == 'grid':
+            row = int(value / 3) * 3
+            col = (value % 3) * 3
+            for i in range(3):
+                for j in range(3):
+                    if self.sudoku.structures[row+i][col+j]:
+                        result.add((row+i, col+j))
+        elif type == 'row':
+            for i in range(self.SIZE):
+                result.add((value, i))
+        else: # col
+            for i in range(self.SIZE):
+                result.add((i, value))
+
+        variables = []
+        for var in self.domains:
+            if (var.i, var.j) in result and var not in assignment:
+                variables.append(var)
+        return variables
+
+
+    def assignment_complete(self, assignment):
+        """Checks if assignment is completed"""
+        for var in self.sudoku.variables:
+            if var.value is None and var not in assignment:
+                return False
+        return True
+
+    def grid_complete(self, grid, assignment):
+        """Checks if grid is completed"""
+        variables = self.get_variables(assignment, 'grid', grid)
+        return len(variables) == 0
+
+    def select_grid_var(self, assignment, grid):
+        vars = self.get_variables(assignment, 'grid', grid)
+        return [var for var in sorted(vars, key=lambda var: len(self.domains[var]))]
+
+    def consistent(self, assignment, var, val):
+        neighbours = self.sudoku.neighbours(assignment, var)
+        for neighbour in neighbours:
+            if self.domains[neighbour] == {val}:
+                return False
+        return True
+    
+    def order_domain_values(self, assignment, var):
+        constraints = dict()
+        neighbours = self.sudoku.neighbours(assignment, var)
+        for val in self.domains[var]:
+            num_constraints = 0
+            for neighbour in neighbours:
+                if val in self.domains[neighbour]:
+                    num_constraints += 1
+            constraints[val] = num_constraints
+
+        ordered = [val for val, _ in sorted(constraints.items(), key=lambda x: x[1])]
+        return ordered
+
+    def backtrack(self, assignment):
+        """
+        Using Backtracking Search, take as input a partial assignment for the
+        sudoku and return a complete assignment if possible to do so.
+
+        `assignment` is a mapping from variables (keys) to domains (values).
+
+        If no assignment is possible, return initial assignment.
+        """
+        if self.assignment_complete(assignment):
+            return assignment
+
+        grid = self.select_unassigned_grid()[0]
+        var = self.select_grid_var(assignment, grid)[0]
+        for val in self.order_domain_values(assignment, var):
+            if not self.consistent(assignment, var, val):
+                continue
+            assignment[var] = val
+            succeed = self.update_domain(var, val)
+            if not succeed:
+                del assignment[var]
+                continue
+            result = self.backtrack(assignment)
+            if result is not None:
+                return result
+            del assignment[var]
+            self.update_domain(var, val, add=True)
+        return None
+        
 
 def main():
 
@@ -305,7 +505,7 @@ def main():
     creator = SudokuCreator(sudoku)
     assignment = creator.solve()
 
-    # # Print result
+    # Print result
     if assignment is None:
         print("No solution.")
     else:
