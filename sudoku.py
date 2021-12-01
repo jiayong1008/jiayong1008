@@ -320,7 +320,7 @@ class SudokuCreator():
 
     def find_naked_pairs(self, assignment, type, index):
         """
-        Two cells in a row, a column, or a block having only the same pair of candidates 
+        Two cells in a row, a column, or a grid having only the same pair of candidates 
         are called a Naked Pair. All other appearances of the two candidates in the same 
         row, column, or block can be eliminated.
         """
