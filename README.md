@@ -23,7 +23,7 @@ This very repository is where I store all my personal projects that are neither 
 1. **Sudoku**  
 **Description:** Dump a sudoku question into this program, it will solve it for you, no matter how hard it is, provided the sudoku is indeed solvable. Try dumping any 'extreme' sudoku you find online to this program, if my program failed to solve, I owe you an ice cream 🍦.  
 **Language:** Python  
-:point_right: **[View More]()** (Not published yet)  
+:point_right: **[View More](https://github.com/jiayong1008/jiayong1008/tree/ai/sudoku)** (Not published yet)  
 
 2. **Stock**  
 **Description:** Besides coding, I have quite some interest in stocks and real estates. Hence, I developed this program to calculate stock fees for me, taking into account the current stamp duty, SST, clearance, and broker fee. Why do I need to calculate when the broker website will calculate it for me if I do purchase? Because even if I do buy, they take at least a day to include that in your account, unfortunately, I don't have patience when it comes to managing finance 😆.  
