@@ -2,15 +2,14 @@
 - 👋 Hi, I’m Lim Jia Yong from Puchong Selangor, Malaysia.
 - 🎓 Undergraduate student in Asia Pacific University (APU) Malaysia.
 - 🎓 Taken and completed 3 online courses from Harvard University.
-- 💯 CGPA 3.96 (Still entitled to 4.00 due to 1 unconfirmed result)
-- 👀 I’m interested in web development (both frontend and backend)
-- 👀 I'm also equally interested in data science (data mining, machine learning, etc.)
-- 🌱 I’m fairly familiar with Python's Flask and Django web framework
-- 🌱 I’m learning PHP's Laravel web framework
-- 💞️ I’m currently seeking for an internship opportunity in Malaysia
+- 💯 CGPA 4.00
+- 👀 I’m interested in web development and web 3.0 / blockchain technology (both frontend and backend)
+- 🌱 I’m fairly familiar with Python's Flask, Python's Django and PHP Laravel backend web framework
+- 🌱 I have skills in React JS, Bootstrap, Flutter as well.
+- 💞️ I’m currently seeking for a remote web3 job.
 - 💞️ I’d like the opportunity to collaborate on exciting opportunities, don't hesitate to hit me up
 - 📫 You can reach me at jiayong1008@gmail.com
-- 👉 [Personal Website](https://limjiayong.wordpress.com/)
+- 👉 [Personal Website](https://jiayong1008.github.io/)
 
 ## HarvardX
 HarvardX is an online learning initiative by *Harvard University* through [edX](https://www.edx.org/school/harvardx) online platform. These courses are also taught physically in Harvard itself. I have learnt a fair lot from these courses, to name a few, fundamentals of programming with C and Python, web programming with Python's Flask, Django, SQLite, HTML, CSS, JavaScript, and even the fundamentals of Artificial Intelligence. View my [Harvard repository](https://github.com/jiayong1008/harvardx) where I include some of my projects.  
