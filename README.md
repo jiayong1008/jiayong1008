@@ -1,5 +1,5 @@
 # Introduction
-- 👋 Hi, I’m Lim Jia Yong from Puchong Selangor, Malaysia.
+- 👋 Hi, I’m Lim Jia Yong (nickname - Hope) from Puchong Selangor, Malaysia.
 - 🎓 Undergraduate student in Asia Pacific University (APU) Malaysia.
 - 🎓 Taken and completed 3 online courses from Harvard University.
 - 💯 CGPA 4.00
@@ -20,13 +20,13 @@ This very repository is where I store all my personal projects that are neither 
 1. **Krypt**   
 **Description:** A platform where users can connect to their Metamask wallet and send Eth to anybody. It's got a pretty decent frontend. 👀  
 **Language:** Solidity, React JS   
-:point_right: **[View More](https://github.com/jiayong1008/web3-krypt)**
+:point_right: **[View More](https://github.com/jiayong1008/web3-krypt)**   
 :point_right: **[Live Demo](https://jiayong1008.github.io/web3-krypt/)**
 
 2. **Joker**
 **Description:** This is a platform which sells a newly created ERC20 token. Users can buy / sell the token with Eth.  
 **Language:** Solidity, React JS  
-:point_right: **[View More](https://github.com/jiayong1008/web3-joker)**
+:point_right: **[View More](https://github.com/jiayong1008/web3-joker)**   
 :point_right: **[Live Demo](https://jiayong1008.github.io/web3-joker/)**
 
 3. **Sudoku**  
@@ -34,8 +34,8 @@ This very repository is where I store all my personal projects that are neither 
 **Language:** Python  
 :point_right: **[View More](https://github.com/jiayong1008/jiayong1008/tree/ai/sudoku)**  
 
-
-I am open to any project feedback or recommendations, if you have one, do let me know. 😄
+I've got many more projects which I did not include here, you could check out my other repos if you are interested.
+I am open to any project feedback or recommendations. 😄   
 📫 jiayong1008@gmail.com
 
 <!---
