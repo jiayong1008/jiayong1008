@@ -1,14 +1,16 @@
 # Introduction
-- 👋 Hi, I’m Lim Jia Yong (nickname - Hope) from Puchong Selangor, Malaysia.
-- 🎓 Undergraduate student in Asia Pacific University (APU) Malaysia.
+- 👋 Hi, I’m Lim Jia Yong (call me - Jia Yong) from Puchong Selangor, Malaysia.
+- 🎓 Second year Bachelor's Degree in IT student from Asia Pacific University (APU), Malaysia
 - 🎓 Taken and completed 3 online courses from Harvard University.
-- 💯 CGPA 4.00
-- 👀 I’m interested in web development and web 3.0 / blockchain technology.
-- 🌱 I’m fairly familiar with Solidity, Flask, Django and PHP Laravel.
-- 🌱 I have skills in React JS, Bootstrap, Flutter as well.
-- 💞️ I’m currently seeking for a remote web3 job.
-- 💞️ I’d like the opportunity to collaborate on exciting opportunities, don't hesitate to hit me up
-- 📫 You can reach me at jiayong1008@gmail.com
+- 💯 CGPA 3.95
+- 👩‍💻 2 years working experience as a software engineer during my studies.
+- 👩‍💻 Design, develop, and maintain multiple full-stack software projects, which includes both web and mobile-based applications.
+- 📍 Currently developing a student management system for a start-up company in Malaysia (solo developer in the company). 
+- 📍 Automate and help reduce administrative tasks for the company.
+- 🌱 Advanced knowledge in PHP Laravel, MYSQL, Tailwind, Bootstrap.
+- 🌱 Also familiar with Python Django, Java, React JS, Flutter, Solidity, NodeJS.
+- 💞️ Would love the opportunity to collaborate internationally.
+- 📫 Please do reach me by email at jiayong1008@gmail.com.
 - 👉 [Personal Website](https://jiayong1008.github.io/)
 
 ## HarvardX
