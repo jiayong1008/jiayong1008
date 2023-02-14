@@ -5,6 +5,7 @@
 - 💯 CGPA 3.95
 - 👩‍💻 2 years working experience as a software engineer during my studies.
 - 👩‍💻 Design, develop, and maintain multiple full-stack software projects, which includes both web and mobile-based applications.
+- 💸 Experience in digital marketing and secured over RM 23k sales.
 - 📍 Currently developing a student management system for a start-up company in Malaysia (solo developer in the company). 
 - 📍 Automate and help reduce administrative tasks for the company.
 - 🌱 Advanced knowledge in PHP Laravel, MYSQL, Tailwind, Bootstrap.
