@@ -2,14 +2,15 @@
 - 👋 Hi, I’m Lim Jia Yong (call me - Jia Yong) from Puchong Selangor, Malaysia.
 - 🎓 Second year Bachelor's Degree in IT student from Asia Pacific University (APU), Malaysia
 - 🎓 Taken and completed 3 online courses from Harvard University.
-- 💯 CGPA 3.95
+- 💯 CGPA 3.7 (First Class)
+- 👩‍💻 Interested in data science and entrepreneurship (side hustle).
 - 👩‍💻 2 years working experience as a software engineer during my studies.
 - 👩‍💻 Design, develop, and maintain multiple full-stack software projects, which includes both web and mobile-based applications.
-- 💸 Experience in digital marketing and secured over RM 23k sales.
+- 💸 Experience in digital marketing and secured over RM 40k sales.
 - 📍 Currently developing a student management system for a start-up company in Malaysia (solo developer in the company). 
 - 📍 Automate and help reduce administrative tasks for the company.
-- 🌱 Advanced knowledge in PHP Laravel, MYSQL, Tailwind, Bootstrap.
-- 🌱 Also familiar with Python Django, Java, React JS, Flutter, Solidity, NodeJS.
+- 🌱 Advanced knowledge in Python, R Programming, PHP Laravel, MYSQL, Tailwind, Bootstrap.
+- 🌱 Also familiar with Python Django, Java, C, C#, React JS, Flutter, Solidity, NodeJS.
 - 💞️ Would love the opportunity to collaborate internationally.
 - 📫 Please do reach me by email at jiayong1008@gmail.com.
 - 👉 [Personal Website](https://jiayong1008.github.io/)
