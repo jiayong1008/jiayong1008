@@ -15,26 +15,27 @@
 - 📫 Please do reach me by email at jiayong1008@gmail.com.
 - 👉 [Personal Website](https://jiayong1008.github.io/)
 
+
 ## Latest Projects
 ### Real Estate Management System
-**Description:** Manage properties, tenants, property assets, maintenance requests, rental income, expenses, and visualize a live analytics dashboard with all your data, in one place. Tenants can pay rent through bank transfer, Stripe, or even cryptocurrency. 
-👩‍💻 **Stack:** PHP Laravel + Filament + MySQL + Tailwind CSS
+**Description:** Manage properties, tenants, property assets, maintenance requests, rental income, expenses, and visualize a live analytics dashboard with all your data, in one place. Tenants can pay rent through bank transfer, Stripe, or even cryptocurrency. \
+👩‍💻 **Stack:** PHP Laravel + Filament + MySQL + Tailwind CSS \
 👉 [Video Demo](https://youtu.be/_FppxtlTwSA)
 
 ### Restaurant Management System
-**Description:** A system designed for restaurant customers, kitchen staff, and admins. Consider it similar to a food ordering system 
-👩‍💻 **Stack:** PHP Laravel
-🔗 [Public Repo](https://github.com/jiayong1008/laravel-zen-sushi)
+**Description:** A system designed for restaurant customers, kitchen staff, and admins. Consider it similar to a food ordering system. \
+👩‍💻 **Stack:** PHP Laravel \
+🔗 [Public Repo](https://github.com/jiayong1008/laravel-zen-sushi) \
 👉 [Video Demo](https://youtu.be/jOz4F5gLhxg)
 
 ### Learning Platform 
-Description: A Digital Marketing Learning Web Application designed for students and admins. It provides an interactive learning experience for individuals interested in mastering the field of digital marketing. Administrators are authorized to manage and monitor the learning content of the website. 
-👩‍💻 **Stack:** C# ASP.Net
-🔗 [Public Repo](https://github.com/jiayong1008/net-digital-marketing)
+Description: A Digital Marketing Learning Web Application designed for students and admins. It provides an interactive learning experience for individuals interested in mastering the field of digital marketing. Administrators are authorized to manage and monitor the learning content of the website. \
+👩‍💻 **Stack:** C# ASP.Net \
+🔗 [Public Repo](https://github.com/jiayong1008/net-digital-marketing) \
 👉 [Video Demo](https://youtu.be/Lf7WL2TUAEA)
 
-Feel free to check out my other public repos if you are interested. 
-🤝 Open for freelance projects
+Feel free to check out my other public repos if you are interested. \
+🤝 Open for freelance projects \
 📫 jiayong1008@gmail.com
 <!---
 jiayong1008/jiayong1008 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
