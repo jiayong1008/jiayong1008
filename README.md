@@ -15,33 +15,27 @@
 - 📫 Please do reach me by email at jiayong1008@gmail.com.
 - 👉 [Personal Website](https://jiayong1008.github.io/)
 
-## HarvardX
-HarvardX is an online learning initiative by *Harvard University* through [edX](https://www.edx.org/school/harvardx) online platform. These courses are also taught physically in Harvard itself. I have learnt a fair lot from these courses, to name a few, fundamentals of programming with C and Python, web programming with Python's Flask, Django, SQLite, HTML, CSS, JavaScript, and even the fundamentals of Artificial Intelligence. View my [Harvard repository](https://github.com/jiayong1008/harvardx) where I include some of my projects.  
+## Latest Projects
+### Real Estate Management System
+**Description:** Manage properties, tenants, property assets, maintenance requests, rental income, expenses, and visualize a live analytics dashboard with all your data, in one place. Tenants can pay rent through bank transfer, Stripe, or even cryptocurrency. 
+👩‍💻 **Stack:** PHP Laravel + Filament + MySQL + Tailwind CSS
+👉 [Video Demo](https://youtu.be/_FppxtlTwSA)
 
-## Personal Projects
-This very repository is where I store all my personal projects that are neither Harvard nor APU's assignment. Each project are unique from each other and are developed when I have the need to automate something or find myself interested in a certain project. All my projects are listed as below, though, I plan to add more to this list as the time goes by:
+### Restaurant Management System
+**Description:** A system designed for restaurant customers, kitchen staff, and admins. Consider it similar to a food ordering system 
+👩‍💻 **Stack:** PHP Laravel
+🔗 [Public Repo](https://github.com/jiayong1008/laravel-zen-sushi)
+👉 [Video Demo](https://youtu.be/jOz4F5gLhxg)
 
-1. **Krypt**   
-**Description:** A platform where users can connect to their Metamask wallet and send Eth to anybody. It's got a pretty decent frontend. 👀  
-**Language:** Solidity, React JS   
-:point_right: **[View More](https://github.com/jiayong1008/web3-krypt)**   
-:point_right: **[Live Demo](https://jiayong1008.github.io/web3-krypt/)**
+### Learning Platform 
+Description: A Digital Marketing Learning Web Application designed for students and admins. It provides an interactive learning experience for individuals interested in mastering the field of digital marketing. Administrators are authorized to manage and monitor the learning content of the website. 
+👩‍💻 **Stack:** C# ASP.Net
+🔗 [Public Repo](https://github.com/jiayong1008/net-digital-marketing)
+👉 [Video Demo](https://youtu.be/Lf7WL2TUAEA)
 
-2. **Joker**
-**Description:** This is a platform which sells a newly created ERC20 token. Users can buy / sell the token with Eth.  
-**Language:** Solidity, React JS  
-:point_right: **[View More](https://github.com/jiayong1008/web3-joker)**   
-:point_right: **[Live Demo](https://jiayong1008.github.io/web3-joker/)**
-
-3. **Sudoku**  
-**Description:** Dump a sudoku question into this program, it will solve it for you, no matter how hard it is, provided the sudoku is indeed solvable. Try dumping any 'extreme' sudoku you find online to this program, if my program failed to solve, I owe you an ice cream 🍦.  
-**Language:** Python  
-:point_right: **[View More](https://github.com/jiayong1008/jiayong1008/tree/ai/sudoku)**  
-
-I've got many more projects which I did not include here, you could check out my other repos if you are interested.
-I am open to any project feedback or recommendations. 😄   
+Feel free to check out my other public repos if you are interested. 
+🤝 Open for freelance projects
 📫 jiayong1008@gmail.com
-
 <!---
 jiayong1008/jiayong1008 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
