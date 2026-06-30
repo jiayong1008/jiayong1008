@@ -1,27 +1,65 @@
-# 👋 Hi, I'm Lim Jia Yong (Jia Yong)  
+# Hi, I'm Lim Jia Yong 👋
 
-🚀 **Software Engineer | AI Enthusiast | Web Development Expert**  
+**Builder. Founder. Software Engineer.**
 
-## 🏆 About Me  
-I'm a passionate Malaysian software engineer with an entrepreneurial mindset and a strong interest in **AI and web development**. With over **4 years of experience**, I specialize in building scalable and high-performance web and AI-based applications.  
+I build AI-powered products and web applications — from zero to production. Currently running two startups, client work, and a product in stealth, all at once.
 
-## 💡 What I Do  
-- **Founder & CEO** of [Soft Lead Solutions](https://softlead.net/) (003676272-W) — A professional web development agency  
-- **Co-founder** of [TalentScreen AI](https://talentscreen-ai.com/) — AI-powered virtual interviewer startup  
-- **WordPress Expert** — Delivering high-quality WordPress websites & helping clients rank **top on search engines (SEO)**  
-- **PHP Laravel Specialist** — Building scalable, high-performance web applications  
+---
 
-## 🎓 Education  
-- **First Class Honours Bachelor's Degree in IT (CGPA 3.87)** — *Asia Pacific University (APU), Malaysia*  
-- Completed **3 online courses from Harvard University**
+## 🚀 What I'm Building
 
-## 🛠 Tech Stack  
-- **Backend:** PHP (Laravel)  
-- **Frontend:** HTML, CSS, JavaScript  
-- **CMS:** WordPress  
-- **SEO:** Advanced knowledge in optimizing websites for **higher search rankings**  
+| Project | What it is |
+| :--- | :--- |
+| [**TalentScreen AI**](https://talentscreen-ai.com/) | AI-powered virtual interviewer platform — co-founded, handles end-to-end screening |
+| [**Soft Lead Solutions**](https://softlead.net/) | My software agency — web builds, SEO, and AI integrations for SMEs |
 
-## 📫 Let's Connect!  
-🔗 [Website](https://softlead.net/)  
-🔗 [LinkedIn](https://www.linkedin.com/in/jia-yong-lim-b520681aa/)  
-🔗 [GitHub](https://github.com/jiayong1008) 
+---
+
+## 🛠 Tech Stack
+
+**Languages & Frameworks**
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+
+**AI & Integrations**
+
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Anthropic_Claude-CC785C?style=flat&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
+
+**CMS & Tools**
+
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
+
+---
+
+## 📊 GitHub Stats
+
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=jiayong1008&show_icons=true&theme=default&hide_border=true&count_private=true" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jiayong1008&layout=compact&theme=default&hide_border=true" height="150" />
+</p>
+
+---
+
+## 🎓 Education
+
+**Bachelor of Science (Hons) in Information Technology** — First Class Honours, CGPA 3.87
+Asia Pacific University (APU), Malaysia
+
+---
+
+## 📫 Let's Connect
+
+[![Website](https://img.shields.io/badge/softlead.net-000000?style=flat&logo=About.me&logoColor=white)](https://softlead.net/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jia-yong-lim-b520681aa/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/jiayong1008)
