@@ -8,10 +8,11 @@ I build AI-powered products and web applications — from zero to production. Cu
 
 ## 🚀 What I'm Building
 
-| Project | What it is |
-| :--- | :--- |
-| [**TalentScreen AI**](https://talentscreen-ai.com/) | AI-powered virtual interviewer platform — co-founded, handles end-to-end screening |
-| [**Soft Lead Solutions**](https://softlead.net/) | My software agency — web builds, SEO, and AI integrations for SMEs |
+| Project | What it is | Activity |
+| :--- | :--- | :--- |
+| [**TalentScreen AI**](https://talentscreen-ai.com/) | AI-powered virtual interviewer platform — co-founded, handles end-to-end screening | |
+| [**Soft Lead Solutions**](https://softlead.net/) | My software agency — web builds, SEO, and AI integrations for SMEs | |
+| **EduKids Web** | Multi-app educational & management platform | [![wakatime](https://wakatime.com/badge/user/7981720e-7706-4ea9-a0e4-5b816900afb9/project/7f96dc4c-3943-4852-b2c1-74008c16b914.svg)](https://wakatime.com/badge/user/7981720e-7706-4ea9-a0e4-5b816900afb9/project/7f96dc4c-3943-4852-b2c1-74008c16b914) |
 
 ---
 
