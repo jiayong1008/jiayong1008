@@ -45,8 +45,10 @@ for (const day of days) {
   }
 }
 
+const EXCLUDED_PROJECTS = new Set(["jiayong1008"]); // this profile repo itself
+
 const projects = [...projectSeconds.entries()]
-  .filter(([, seconds]) => seconds > 60)
+  .filter(([name, seconds]) => seconds > 60 && !EXCLUDED_PROJECTS.has(name))
   .sort((a, b) => b[1] - a[1])
   .slice(0, 6);
 
