@@ -18,7 +18,7 @@ jobs:
         uses: rickstaa/github-readme-stats-action@main
         with:
           card: stats
-          options: username=jiayong1008&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&theme=default
+          options: username=jiayong1008&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&theme=default&hide_rank=true
           path: profile/stats.svg
           token: ${{ secrets.STATS_PAT }}
 
