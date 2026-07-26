@@ -13,6 +13,7 @@ I build AI-powered products and web applications — from zero to production. Cu
 | [**TalentScreen AI**](https://talentscreen-ai.com/) | AI-powered virtual interviewer platform — co-founded, handles end-to-end screening |
 | [**Soft Lead Solutions**](https://softlead.net/) | My software agency — web builds, SEO, and AI integrations for SMEs |
 | **EduKids Web** | Multi-app educational & management platform |
+| **Ask Lah** | Hackathon project |
 
 ---
 
@@ -53,7 +54,19 @@ I build AI-powered products and web applications — from zero to production. Cu
   <img src="https://streak-stats.demolab.com?user=jiayong1008&hide_border=true&theme=default" height="150" />
 </p>
 
-**Currently building (last 7 days)**
+**Coding stats (all-time)**
+
+<!--WAKATIME_ALLTIME:START-->
+| Metric | Value |
+| :--- | :--- |
+| Total time coded | 84 hrs 29 mins |
+| Current streak | 23 days |
+| Best day | 6 hrs 5 mins (2026-07-17) |
+
+<sub>67 hrs 48 mins of that (80%) happened in just the last 30 days.</sub>
+<!--WAKATIME_ALLTIME:END-->
+
+**Currently building (last 30 days)**
 
 <!--WAKATIME:START-->
 | Project | Time |
