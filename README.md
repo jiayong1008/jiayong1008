@@ -58,7 +58,12 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME:START-->
 | Project | Time |
 | :--- | :--- |
-| _no activity in the last 7 days_ | |
+| zeroticket | 8 hrs 2 mins |
+| jiayong1008 | 2 hrs 15 mins |
+| dispute-filter-report | 1 hr 14 mins |
+| dispute-phase3-microapp | 42 mins |
+| edukids-web | 26 mins |
+| Parser-MicroApp | 20 mins |
 <!--WAKATIME:END-->
 
 <sub>Source: WakaTime API · auto-updated daily via GitHub Action</sub>
