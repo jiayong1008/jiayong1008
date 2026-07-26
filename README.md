@@ -46,8 +46,8 @@ I build AI-powered products and web applications — from zero to production. Cu
 ## 📊 GitHub & Coding Stats
 
 <p align="left">
-  <img src="https://github-stats-extended.vercel.app/api?username=jiayong1008&show_icons=true&theme=default&hide_border=true&count_private=true" height="150" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=jiayong1008&layout=compact&theme=default&hide_border=true" height="150" />
+  <img src="./profile/stats.svg" height="150" />
+  <img src="./profile/top-langs.svg" height="150" />
 </p>
 <p align="left">
   <img src="https://streak-stats.demolab.com?user=jiayong1008&hide_border=true&theme=default" height="150" />
