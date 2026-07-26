@@ -8,11 +8,11 @@ I build AI-powered products and web applications — from zero to production. Cu
 
 ## 🚀 What I'm Building
 
-| Project | What it is | Activity |
-| :--- | :--- | :--- |
-| [**TalentScreen AI**](https://talentscreen-ai.com/) | AI-powered virtual interviewer platform — co-founded, handles end-to-end screening | |
-| [**Soft Lead Solutions**](https://softlead.net/) | My software agency — web builds, SEO, and AI integrations for SMEs | |
-| **EduKids Web** | Multi-app educational & management platform | [![wakatime](https://wakatime.com/badge/user/7981720e-7706-4ea9-a0e4-5b816900afb9/project/7f96dc4c-3943-4852-b2c1-74008c16b914.svg)](https://wakatime.com/badge/user/7981720e-7706-4ea9-a0e4-5b816900afb9/project/7f96dc4c-3943-4852-b2c1-74008c16b914) |
+| Project | What it is |
+| :--- | :--- |
+| [**TalentScreen AI**](https://talentscreen-ai.com/) | AI-powered virtual interviewer platform — co-founded, handles end-to-end screening |
+| [**Soft Lead Solutions**](https://softlead.net/) | My software agency — web builds, SEO, and AI integrations for SMEs |
+| **EduKids Web** | Multi-app educational & management platform |
 
 ---
 
@@ -50,8 +50,19 @@ I build AI-powered products and web applications — from zero to production. Cu
   <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=jiayong1008&layout=compact&theme=default&hide_border=true" height="150" />
 </p>
 <p align="left">
-  <img src="https://github-stats-extended.vercel.app/api/wakatime?username=7981720e-7706-4ea9-a0e4-5b816900afb9&hide_border=true" height="150" />
+  <img src="https://streak-stats.demolab.com?user=jiayong1008&hide_border=true&theme=default" height="150" />
 </p>
+
+**Currently building (last 7 days)**
+
+| Project | Time |
+| :--- | :--- |
+| zeroticket | 8 hrs 1 min |
+| dispute-filter-report | 1 hr 14 min |
+| dispute-phase3-microapp | 41 mins |
+| edukids-web | 25 mins |
+
+<sub>Source: [WakaTime dashboard](https://wakatime.com/dashboard) · manual snapshot, not live · updated Jul 26, 2026</sub>
 
 ---
 
