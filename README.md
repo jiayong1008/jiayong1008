@@ -55,14 +55,16 @@ I build AI-powered products and web applications — from zero to production. Cu
 
 **Currently building (last 7 days)**
 
+<!--WAKATIME:START-->
 | Project | Time |
 | :--- | :--- |
 | zeroticket | 8 hrs 1 min |
 | dispute-filter-report | 1 hr 14 min |
 | dispute-phase3-microapp | 41 mins |
 | edukids-web | 25 mins |
+<!--WAKATIME:END-->
 
-<sub>Source: [WakaTime dashboard](https://wakatime.com/dashboard) · manual snapshot, not live · updated Jul 26, 2026</sub>
+<sub>Source: WakaTime API · auto-updated daily via GitHub Action</sub>
 
 ---
 

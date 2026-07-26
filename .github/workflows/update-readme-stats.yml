@@ -30,10 +30,19 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.STATS_PAT }}
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update WakaTime table in README
+        env:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        run: node scripts/update-wakatime-readme.mjs
+
       - name: Commit updated cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
+          git add profile/*.svg README.md
           git commit -m "chore: update stats cards" || exit 0
           git push
