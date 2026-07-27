@@ -59,11 +59,11 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME_ALLTIME:START-->
 | Metric | Value |
 | :--- | :--- |
-| Total time coded | 84 hrs 45 mins |
-| Current streak | 23 days |
+| Total time coded | 86 hrs 1 min |
+| Current streak | 0 days |
 | Best day | 6 hrs 5 mins (2026-07-17) |
 
-<sub>66 hrs 8 mins of that (78%) happened in just the last 30 days.</sub>
+<sub>65 hrs 36 mins of that (76%) happened in just the last 30 days.</sub>
 <!--WAKATIME_ALLTIME:END-->
 
 **Currently building (last 30 days)**
@@ -71,9 +71,9 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME:START-->
 | Project | Time |
 | :--- | :--- |
-| zeroticket | 36 hrs 13 mins |
+| zeroticket | 35 hrs 41 mins |
 | ask-lah | 11 hrs 55 mins |
-| edukids-web | 5 hrs 8 mins |
+| edukids-web | 5 hrs |
 | dispute-filter-report | 2 hrs 19 mins |
 | dispute-phase3-microapp | 1 hr 50 mins |
 | central-api | 1 hr 36 mins |
