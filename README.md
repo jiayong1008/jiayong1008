@@ -71,12 +71,12 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME:START-->
 | Project | Time |
 | :--- | :--- |
-| zeroticket | 10 hrs 1 min |
-| edukids-web | 7 hrs 49 mins |
+| zeroticket | 9 hrs 59 mins |
+| edukids-web | 6 hrs 29 mins |
 | dispute-filter-report | 6 hrs 8 mins |
 | Jy Vault | 5 hrs 29 mins |
-| ask-lah | 4 hrs 42 mins |
 | ekids-auth | 2 hrs 55 mins |
+| self-mapped-amongus | 2 hrs 53 mins |
 <!--WAKATIME:END-->
 
 <sub>Source: WakaTime API · auto-updated daily via GitHub Action</sub>
