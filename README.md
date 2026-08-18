@@ -59,7 +59,7 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME_ALLTIME:START-->
 | Metric | Value |
 | :--- | :--- |
-| Total time coded | 121 hrs 38 mins |
+| Total time coded | 123 hrs 12 mins |
 | Current streak | 0 days |
 | Best day | 6 hrs 5 mins (2026-07-17) |
 
@@ -72,8 +72,8 @@ I build AI-powered products and web applications — from zero to production. Cu
 | Project | Time |
 | :--- | :--- |
 | zeroticket | 9 hrs 58 mins |
-| edukids-web | 6 hrs 20 mins |
-| dispute-filter-report | 6 hrs 8 mins |
+| dispute-filter-report | 6 hrs 34 mins |
+| edukids-web | 5 hrs 47 mins |
 | Jy Vault | 5 hrs 35 mins |
 | ekids-auth | 2 hrs 55 mins |
 | self-mapped-amongus | 2 hrs 53 mins |
