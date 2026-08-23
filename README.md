@@ -59,7 +59,7 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME_ALLTIME:START-->
 | Metric | Value |
 | :--- | :--- |
-| Total time coded | 127 hrs 23 mins |
+| Total time coded | 130 hrs 11 mins |
 | Current streak | 0 days |
 | Best day | 6 hrs 5 mins (2026-07-17) |
 
@@ -71,12 +71,12 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME:START-->
 | Project | Time |
 | :--- | :--- |
-| zeroticket | 8 hrs 33 mins |
-| dispute-filter-report | 6 hrs 13 mins |
-| edukids-web | 5 hrs 51 mins |
-| Jy Vault | 5 hrs 49 mins |
+| Jy Vault | 6 hrs 14 mins |
+| zeroticket | 6 hrs 5 mins |
+| dispute-filter-report | 5 hrs 40 mins |
+| edukids-web | 5 hrs 27 mins |
+| personal-finance | 4 hrs 53 mins |
 | jy-vault-interactive | 4 hrs 30 mins |
-| ekids-auth | 2 hrs 55 mins |
 <!--WAKATIME:END-->
 
 <sub>Source: WakaTime API · auto-updated daily via GitHub Action</sub>
