@@ -60,7 +60,7 @@ I build AI-powered products and web applications — from zero to production. Cu
 | Metric | Value |
 | :--- | :--- |
 | Total time coded | 136 hrs 12 mins |
-| Current streak | 1 day |
+| Current streak | 0 days |
 | Best day | 6 hrs 5 mins (2026-07-17) |
 
 
@@ -71,7 +71,7 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME:START-->
 | Project | Time |
 | :--- | :--- |
-| Jy Vault | 6 hrs 17 mins |
+| Jy Vault | 6 hrs |
 | jy-vault-interactive | 5 hrs 41 mins |
 | dispute-filter-report | 5 hrs 31 mins |
 | personal-finance | 5 hrs 16 mins |
