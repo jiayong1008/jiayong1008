@@ -73,7 +73,7 @@ I build AI-powered products and web applications — from zero to production. Cu
 | :--- | :--- |
 | jy-vault-interactive | 5 hrs 41 mins |
 | personal-finance | 4 hrs 18 mins |
-| dispute-filter-report | 4 hrs 12 mins |
+| dispute-filter-report | 3 hrs 12 mins |
 | Jy Vault | 3 hrs 9 mins |
 | ekids-auth | 2 hrs 54 mins |
 | self-mapped-amongus | 2 hrs 53 mins |
