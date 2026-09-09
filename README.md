@@ -75,8 +75,8 @@ I build AI-powered products and web applications — from zero to production. Cu
 | personal-finance | 4 hrs 18 mins |
 | self-mapped-amongus | 2 hrs 53 mins |
 | Jy Vault | 2 hrs 51 mins |
-| dispute-filter-report | 2 hrs 16 mins |
 | whatsapp-chatbot | 2 hrs 7 mins |
+| ekids-exercise-2 | 1 hr 25 mins |
 <!--WAKATIME:END-->
 
 <sub>Source: WakaTime API · auto-updated daily via GitHub Action</sub>
