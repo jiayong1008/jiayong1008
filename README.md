@@ -71,11 +71,11 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME:START-->
 | Project | Time |
 | :--- | :--- |
-| personal-finance | 2 hrs 29 mins |
-| Jy Vault | 1 hr 55 mins |
+| Jy Vault | 1 hr 24 mins |
 | doc-editor | 1 hr 13 mins |
 | jy-vault-interactive | 1 hr 7 mins |
-| ekids-exercise-2 | 1 hr 2 mins |
+| ekids-exercise-2 | 46 mins |
+| personal-finance | 34 mins |
 | context-router | 21 mins |
 <!--WAKATIME:END-->
 
