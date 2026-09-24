@@ -72,11 +72,11 @@ I build AI-powered products and web applications — from zero to production. Cu
 | Project | Time |
 | :--- | :--- |
 | jy-vault-interactive | 1 hr 7 mins |
-| ekids-exercise-2 | 46 mins |
 | context-router | 21 mins |
 | odoo | 19 mins |
-| ekids-exercise | 8 mins |
+| ekids-exercise-2 | 12 mins |
 | ekids-cms | 2 mins |
+| whatsapp-chatbot | 1 min |
 <!--WAKATIME:END-->
 
 <sub>Source: WakaTime API · auto-updated daily via GitHub Action</sub>
