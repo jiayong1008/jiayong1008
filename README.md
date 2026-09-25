@@ -71,8 +71,7 @@ I build AI-powered products and web applications — from zero to production. Cu
 <!--WAKATIME:START-->
 | Project | Time |
 | :--- | :--- |
-| jy-vault-interactive | 1 hr 7 mins |
-| context-router | 21 mins |
+| jy-vault-interactive | 55 mins |
 | odoo | 19 mins |
 | ekids-exercise-2 | 12 mins |
 | ekids-cms | 2 mins |

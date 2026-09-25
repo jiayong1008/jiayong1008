@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Lim Jia Yong's GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 5, Total Commits  : 10396, Total PRs: 346, Total Issues: 0, Contributed to (last year): 21</desc>
+        <desc id="descId">Total Stars Earned: 5, Total Commits  : 10403, Total PRs: 346, Total Issues: 0, Contributed to (last year): 21</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 124.09886072734676;
+        stroke-dashoffset: 124.09871025693947;
       }
     }
   
